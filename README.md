@@ -75,12 +75,18 @@ Stuff
 
 ---
 
-## Download and Play the Prebuilt Mac App
-Download Here:
+## Gameplay
+![Screenshot](public/gifs/MainMenu.png)
+![Gameplay Demo](public/gifs/poker.gif)
+![Gameplay Demo](public/gifs/rummy.gif)
+![Gameplay Demo](public/gifs/blackjack.gif)
+![Gameplay Demo](public/gifs/ridethebus.gif)
+
 
 ---
 
-## Watchable Demo
+## Download and Play the Prebuilt Mac App
+Download Here:
 
 ---
 
