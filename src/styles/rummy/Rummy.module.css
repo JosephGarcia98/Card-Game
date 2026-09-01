@@ -1,0 +1,183 @@
+/* ================= TABLE ================= */
+.table {
+    min-height: 100vh;
+    background-image: url("../../public/assets/gamebackground.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+}
+
+/* ================= TITLE ================= */
+.title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,.7);
+}
+
+/* ================= TOP ROW ================= */
+.topRow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+/* ================= CENTER AREA ================= */
+.centerArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0;
+    padding: 20px;
+    background: rgba(0,0,0,.35);
+    border: 2px solid rgba(184,144,40,.5);
+    border-radius: 14px;
+}
+
+/* ================= PLAYER AREA ================= */
+.playerPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 20px;
+    background: rgba(0,0,0,.40);
+    border: 2px solid rgba(184,144,40,.5);
+    border-radius: 14px;
+    gap: 12px;
+}
+
+/* ================= ACTIVE PLAYER ================= */
+.playerPanel.active {
+    border: 4px solid #d9b24c;
+    background: rgba(217,178,76,.18);
+    box-shadow: 0 0 20px rgba(217,178,76,.8);
+    transform: scale(1.03);
+    transition: all .2s ease;
+}
+
+/* ================= CARDS ================= */
+.cardRow {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallCard {
+    width: 60px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.45);
+}
+
+.currentCard {
+    width: 70px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.45);
+    transform-origin: center bottom;
+    will-change: transform;
+}
+
+.deckCard {
+    width: 80px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.45);
+    transition: transform 0.2s ease;
+}
+
+.deckCard:hover {
+    transform: scale(1.05);
+}
+
+.selectedCard {
+    position: absolute;
+    bottom: 0;
+    transform: scale(1.2) translateY(-10px);
+    transition: transform 0.2s ease;
+    z-index: 5;
+}
+/* ================= CARD WRAPPER ================= */
+.cardWrapper {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 100px;
+    overflow: visible;
+}
+
+/* ================= DISCARD PILE ================= */
+.discardPile {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.discardPile img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.45);
+    transform: translateY(-6px);
+}
+
+.discardPile img:hover {
+    transform: translateY(-6px);
+}
+
+/* ================= BUTTONS ================= */
+.menuButton,
+.restartButton,
+.Buttons,
+.discardBtn {
+    padding: 1rem 1.4rem;
+    border: 1px solid #b89028;
+    border-radius: 10px;
+    background: linear-gradient(#3b3b3b, #1c1c1c);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+
+.Buttons {
+    margin-right: 10px;
+}
+
+.discardBtn {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+.menuButton:hover,
+.restartButton:hover,
+.Buttons:hover,
+.discardBtn:hover {
+    background: linear-gradient(#555,#2c2c2c);
+    border-color: #d9b24c;
+    color: #ffe58a;
+}
+
+.menuButton:active,
+.restartButton:active,
+.Buttons:active {
+    transform: translateY(1px);
+}
