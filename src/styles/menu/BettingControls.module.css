@@ -1,0 +1,67 @@
+/* ================= BETTING CONTAINER ================= */
+.bettingContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ================= BETTING BAR ================= */
+.betBar {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #009900;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.4);
+    overflow: hidden; 
+}
+
+/* ================= BALANCE DISPLAY ================= */
+.balance {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 1px solid #009900;
+}
+
+/* ================= BET CONTROLS AREA ================= */
+.betControls {
+    display: flex;
+    align-items: stretch;
+}
+
+/* ================= BUTTONS ================= */
+.adjustButton {
+    padding: 8px 10px;
+    border: none;
+    border-right: 1px solid #009900;
+    background: #111;
+    color: white;
+    cursor: pointer;
+}
+
+.adjustButton:last-of-type {
+    border-right: none;
+}
+
+.confirmButton {
+    padding: 0 18px;
+    border: none;
+    background: #111;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-left: 1px solid #009900;
+}
+
+/* ================= INPUT AREA ================= */
+.betInput {
+    width: 80px;
+    text-align: center;
+    border: none;
+    border-right: 1px solid #009900;
+    border-left: 1px solid #009900;
+    background: #0d0d0d;
+    color: white;
+}
